@@ -11,8 +11,26 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="style.css">
   <link href="img/1.jpg" rel="icon"/>
+	script>
+      
+      
+        setInterval(zoom,100);
+        
+        size = 1;
+        maxsize = 30;
+        
+        function zoom()
+        {
+          if(size <= maxsize)
+          {
+            document.getElementById('tar').style.fontSize = size+"px";
+            size++;
+          }
+        }
+    </script>
+
 </head>
-<body>
+<body onload="zoom()">
 	<style type="text/css">
   .tophead{position: sticky;top:0; z-index:1}
 
@@ -50,7 +68,7 @@
       <h3>भागवत कथा   <marquee> श्रीमद भागवत कथा, भागवत पुराण,</marquee></h3><marquee> श्रीमद भागवत कथा, भागवत पुराण,</marquee>
       </div>
       <div class="col-lg-6 bg-info">
-        <h1 style="margin-top:10px; letter-spacing:px;"><font color="white"><b>पंडित नंदकिशोर जोशी ( उत्तराखंडी )</b></font></h1>
+        <h1 id="tar" style="margin-top:10px; letter-spacing:px;"><font color="white"><b>पंडित नंदकिशोर जोशी ( उत्तराखंडी )</b></font></h1>
         <p style="letter-spacing:5px;"><font color="white">&nbsp;&nbsp;<i>कथावाचक उत्तराखंड</i></font></p>
 
 
