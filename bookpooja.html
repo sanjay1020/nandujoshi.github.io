@@ -8,6 +8,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="style.css">
   <link href="img/1.jpg" rel="icon"/>
@@ -75,7 +76,7 @@ Click me.</button>
 <p id="demo">date/time</p>
       </div>-->
       <audio controls autoplay>
-  <source src="audio/005.mp3" type="audio/mp3"></audio>
+  <source src="audio/005.MP3" type="audio/mp3"></audio>
     
 
  
@@ -107,7 +108,7 @@ Click me.</button>
         <option>गृह प्रवेश पूजा .</option>
         <option>महाशिवरात्रि पूजा</option>
       </select></label><br>
- <label> <button class="btn btn-success">BOOK POOJA </button></label>
+ <label> <button class="btn btn-success" onclick="popUp()" id="pop">BOOK POOJA </button></label>
   </div>
 </lable></lable></form>
 
@@ -276,6 +277,15 @@ const openNav = () => {
 const closeNav = () => {
   document.getElementById('mySidenav').style.width="0";
 }   
+</script>
+  
+  
+  <script type="text/javascript">
+  
+  function popUp(){
+    swal("Good job!", "Your Pooja is successfully booked!", "success");
+  }
+
 </script>
 </body>
 </html>
